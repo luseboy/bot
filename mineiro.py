@@ -786,4 +786,4 @@ async def on_message(message):
             await message.add_reaction('<:correto:553691801366822915')
 
 
-client.run('NTg5ODQxMTkxMDg4OTQ3MjIx.XQZiog.3U9hhROoSOOs3nBUoommbZ_0P9U')
+client.run('MeuTokenSecreto.dll')
