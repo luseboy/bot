@@ -171,4 +171,4 @@ async def on_message(message):
                 "Vai tomar no cu mano")
 
 
-client.run('NTY4ODY5MjU1Njk3NjYxOTYx.XLoWzA._JJeTOWxbvwrDXLtXuaC54sdQwQ')
+client.run('NTg5ODE0Mjg3MDQwNTEyMDIw.XQZbyg.dkbl44UbZsYRn2rA8qYJQBuI6KI')
