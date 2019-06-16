@@ -75,6 +75,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('tem o que no pacote prime?', '!prime'),
         ('que tem no pacote prime?', '!prime'),
         ('quem compra o pacote prime, ganha algum cargo?', '!prime'),
+        ('Pacote PRIME.', '!prime'),
 
         # pacote limitado
         ('pacote mais básico', '!limitado'),
@@ -122,6 +123,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('oq tem no pacote limitado?', '!limitado'),
         ('limitado', '!limitado'),
         ('limitad', '!limitado'),
+        ('Pacote LIMITADO.', '!limitado'),
 
         # pacote pro
         ('qual é o pacote pro?', '!pro'),
@@ -181,6 +183,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('Quanto  custa o pacote pró?', '!pro'),
         ('como funciona o pacote pró?', '!pro'),
         ('como é o pacote pro?', '!pro'),
+        ('Pacote PRO.', '!pro'),
 
         # pacotes
         ('Que os pacotes que existem?', '!pacotes'),
@@ -256,6 +259,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('como eu faço pra compro?', '!pacotes'),
         ('como comprar?', '!pacotes'),
         ('Mano vc pode me passar o preço de cada pacote', '!pacotes'),
+        ('Resumo PACOTES.',' !pacotes'),
 
         # pagamento, recebimento e horário
         ('quais são as formas de pagamento?', '!pag'),
@@ -323,6 +327,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('como faço pra pegar meu pacote que comprei?', '!pag'),
         ('como faço pra receber meu pacote?', '!pag'),
         ('Como faço pra pegar meu pacote que comprei no Boys Academy', '!pag'),
+        ('Pagamento, Recebimento, & Horário.', '!pag'),
 
 
         # upgrades
@@ -357,6 +362,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('Gente eu tenho o pacote pro , eu quero o completo oq eu fasso?', '!upgrade'),
         ('Gente eu tenho o pacote prime , eu quero o pacote pro oq eu fasso?', '!upgrade'),
         ('tenho o pacote pro e quero fazer o upgrade, pode ma ajudar?', '!upgrade'),
+        ('Upgrade de Pacotes.', '!upgrade'),
 
         # plataforma
         ('Os pacotes tem alguma plataforma específica?', '!plat'),
@@ -396,6 +402,8 @@ base = [('qual é o pacote prime?', '!prime'),
         ('as aulas sao para xbox?', '!plat'),
         ('ps4', '!plat'),
         ('xbox', '!plat'),
+        ('Plataformas disponíveis para o curso.',' !plat'),
+        ('o curso tem pra console?', '!plat'),
 
 
         # site
@@ -429,6 +437,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('site', '!site'),
         ('como acesso o site?', '!site'),
         ('como posso acessar o site?', '!site'),
+        ('Site da BØYS ACADEMY.', '!site'),
 
         # pacote lendário
         ('quando o pacote lendário irá voltar?', '!lendario'),
@@ -468,6 +477,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('POSSO JOGAR COM O TONYBOY?', '!lendario'),
         ('POSSO JGOAR com o PULGABOY?', '!lendario'),
         ('posso jogar com o pulga?', '!lendario'),
+        ('Jogar com o professor.', '!lendario'),
 
         # o que tem nas aulas?
         ('o que tem nas aulas?', '!aulas'),
@@ -540,6 +550,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('como funciona o campeonato?', '!camp'),
         ('como é os campeonatows?', '!camp'),
         ('campeonato?', '!camp'),
+        ('Campeonatos.', '!camp'),
 
         # o que é a boys academy?
         ('o que é?', '!academy'),
@@ -579,6 +590,7 @@ base = [('qual é o pacote prime?', '!prime'),
         ('me fala sobre a boys academy', '!academy'),
         ('me fale sobre boys academy', '!academy'),
         ('me fale sobre academy', '!academy'),
+        ('Sobre a Academy.', '!academy'),
 
         # help
         ('help-me', '!help'),
@@ -613,7 +625,8 @@ base = [('qual é o pacote prime?', '!prime'),
         ('can you help me?', '!help'),
         ('help-me', '!help'),
         ('help', '!help'),
-        ("vc pode me ajudar?", '!help')
+        ("vc pode me ajudar?", '!help'),
+        ('Ajuda.',' !help'),
 
         ]
 
@@ -782,8 +795,8 @@ async def on_message(message):
             await message.add_reaction('<:correto:553691801366822915')
         elif resul == "!help":
             await message.channel.send(
-                f'{message.author.mention} \nOi, sou um bot de **Inteligência Artificial**, provavelmente você pediu ajuda, e vou tentar te ajudar!\n\nBom, como sou um bot de IA, eu respondo as suas perguntas, mas somente em relação a **BØYS ACADEMY**, se a pergunta que você fizer eu souber responder, eu te ajudarei da forma correta! \n\nFui desenvolvido pelo **Daleboy** e pelo **Luse**, então se você ver algo errado em mim, procure por eles para poderem arrumar :)')
+                f'{message.author.mention} \nOi, sou um bot de **Inteligência Artificial**, provavelmente você pediu ajuda, e vou tentar te ajudar!\n\nBom, como sou um bot de IA, eu respondo as suas perguntas, mas somente em relação a **BØYS ACADEMY**, se a pergunta que você fizer eu souber responder, eu te ajudarei da forma correta!\n\nEu sei responder perguntas destes tópicos:\n**1.** Pacote PRO.\n**2.** Pacote LIMITADO.\n**3.** Pacote PRIME.\n**4.** Resumo PACOTES.\n**5.** Pagamento, Recebimento, & Horário.\n**6.** Upgrade de Pacotes.\n**7.** Plataformas disponíveis para o curso.\n**8.** Site da BØYS ACADEMY.\n**9.** Jogar com o professor.\n**10.** Campeonatos.\n**11.** Sobre a Academy.\n**12.** Ajuda.\n\nFui desenvolvido pelo **Daleboy** e pelo **Luseboy**, então se você ver algo errado ou tiver alguma sugestão para me ajudar, contate eles :)')
             await message.add_reaction('<:correto:553691801366822915')
 
 
-client.run('MeuTokenSecreto.dll')
+client.run('NTg5ODQxMTkxMDg4OTQ3MjIx.XQZiog.3U9hhROoSOOs3nBUoommbZ_0P9U')
