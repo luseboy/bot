@@ -722,7 +722,7 @@ classificador = nltk.NaiveBayesClassifier.train((basecompleta))
 
 @client.event
 async def on_message(message):
-    if client.user.mention in message.content and message.channel.id == 568870659757703200:
+    if client.user.mention in message.content and message.channel.id == 589843345996513301:
         mensagem = message.content[0:500]
         print('Mensagem do usuário:')
         print(mensagem)
