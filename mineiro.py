@@ -786,4 +786,4 @@ async def on_message(message):
             await message.add_reaction('<:correto:553691801366822915')
 
 
-client.run('NTg5ODE0Mjg3MDQwNTEyMDIw.XQZbyg.dkbl44UbZsYRn2rA8qYJQBuI6KI')
+client.run('NTg5ODQxMTkxMDg4OTQ3MjIx.XQZiog.3U9hhROoSOOs3nBUoommbZ_0P9U')
